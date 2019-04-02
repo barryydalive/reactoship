@@ -16,7 +16,7 @@ app.get('*', (req, res) => {
   // res.send('hi')
   console.log(path.join(__dirname + '/../client/build/index.html'))
   console.log('hi')
-  res.sendFile(path.join(__dirname + '../client/build/index.html'))
+  res.sendFile(path.join(__dirname + '/../client/build/index.html'))
 })
 
 const port = process.env.PORT || 5000
