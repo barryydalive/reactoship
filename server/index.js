@@ -3,7 +3,7 @@ const path = require('path')
 
 const app = express()
 
-app.use(express.static(path.join(__dirname, '/../client/public')))
+app.use(express.static(path.join(__dirname, '../client/public')))
 
 // An api endpoint that returns a short list of items
 app.get('/api/getList', (req, res) => {
@@ -15,7 +15,7 @@ app.get('/api/getList', (req, res) => {
 // Handles any requests that don't match the ones above
 app.get('/', (req, res) => {
   // res.send('hi')
-  res.sendFile(path.join(__dirname + '/../client/public/index.html'))
+  res.sendFile(path.join(__dirname + '../client/public/index.html'))
 })
 
 const port = process.env.PORT || 5000
